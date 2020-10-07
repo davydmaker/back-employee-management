@@ -10,7 +10,7 @@ export async function up(knex: Knex) {
         table.string('first_name',100).notNullable();
         table.string('last_name',100).notNullable();
         table.date('birthday').notNullable();
-        table.double('salary').notNullable();
+        table.integer('salary').notNullable();
     });
 }
 

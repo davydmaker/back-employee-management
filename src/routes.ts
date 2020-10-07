@@ -11,8 +11,8 @@ const rolesController = new RolesController();
 routes.get('/employees', employeesController.index);
 routes.get('/employees/:id', employeesController.show);
 routes.post('/employees', employeesController.create);
-// routes.put('/employees', employeesController.update);
-// routes.delete('/employees', employeesController.delete);
+routes.put('/employees/:id', employeesController.update);
+routes.delete('/employees/:id', employeesController.delete);
 
 // Roles Routes
 routes.get('/roles', rolesController.index);
