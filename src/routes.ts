@@ -18,7 +18,7 @@ routes.delete('/employees/:id', employeesController.delete);
 routes.get('/roles', rolesController.index);
 routes.get('/roles/:id', rolesController.show);
 routes.post('/roles', rolesController.create);
-// routes.put('/roles', rolesController.update);
-// routes.delete('/roles', rolesController.delete);
+routes.put('/roles/:id', rolesController.update);
+routes.delete('/roles/:id', rolesController.delete);
 
 export default routes;

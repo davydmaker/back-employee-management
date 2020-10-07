@@ -1,4 +1,4 @@
-import { Request, Response } from 'express'
+import { Request, Response } from 'express';
 import knex from '../database/connection';
 
 class EmployeesController {
@@ -86,7 +86,7 @@ class EmployeesController {
             .where('id', id)
             .del()
             .then(status => {
-                if (status == 0) return res.status(400).json({ message: "An error has occurred." })
+                if (status === 0) return res.status(400).json({ message: "An error has occurred." })
             });
 
         return res.json({ success: true });
